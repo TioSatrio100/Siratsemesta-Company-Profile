@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+  </head>
+  <body>
+    <!-- <p id="user"></p>
+    <p>Input for username</p>
+
+    <div class="user"></div>
+    <br />
+    <textarea id="chat" rows="20" cols="31"></textarea>
+    <br />
+    <form action="">
+      <label>Username: <input type="text" id="username" /></label>
+      <label>Message: <input type="text" id="message" /> </label>
+      <button id="submit" type="submit" value="submit">Kirim</button>
+    </form> -->
+    <button id="openChatbot" class="chatbot-button btn-primary rounded-circle"><i class="fas fa-comment"></i></button>
+
+    <div class="chatbot">
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-8 col-xl-6">
+          <div class="card">
+            <div class="card-header msg_head">
+              <div class="d-flex bd-highlight">
+                <div class="user_info">
+                  <p id="user">Input for username</p>
+                  <div class="user"></div>
+                  <label>Username: <input type="text" id="username" /></label>
+                </div>
+              </div>
+            </div>
+            <textarea id="chat" rows="15" cols="50" class="card-body"></textarea>
+
+            <div class="card-footer">
+              <div class="input-group">
+                <input type="text" id="message" class="form-control type_msg text-left" placeholder="Type your message..." />
+                <div class="input-group-append">
+                  <button id="submit" type="submit" value="submit" class="input-group-text send_btn">Send</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/chat.js"></script>
+    <script src="script/open.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
