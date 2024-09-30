@@ -1,0 +1,110 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  background: #c4e4ff;
+}
+
+.card {
+  height: 500px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.376);
+}
+
+.card-header {
+  border-radius: 15px 15px 0 0;
+  border-bottom: 0;
+}
+
+.card-footer {
+  border-radius: 0 0 15px 15px;
+  border-top: 0;
+}
+
+.type_msg {
+  border: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 60px;
+  overflow-y: auto;
+}
+
+.type_msg::placeholder {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.type_msg:focus {
+  box-shadow: none;
+  outline: 0px;
+}
+
+.attach_btn {
+  border-radius: 15px 0 0 15px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.send_btn {
+  border-radius: 0 15px 15px 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 0;
+  color: white;
+  cursor: pointer;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.chatbot.show {
+  display: block;
+}
+
+.chatbot {
+  display: none;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  bottom: 60px;
+  right: 20px;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  height: 500px;
+}
+
+.chatbot-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  line-height: 50px;
+}
